@@ -30,3 +30,14 @@ LaunchUrl: esta propiedad determina que Visual Studio abra el navegador con nues
 Recomendación por razones de seguridad el archivo LaunchSettings.json no se debe incluir en el 
 entorno de producción por que puede exponer información sensible que podría comprometer datos 
 críticos, en su lugar se usan servicios de administración como AWS Secret Manager
+
+# Extension Methods
+
+Un método de extensión es inherentemente un método estático es una técnica que permite agregar funcionalidades adicionales a tipos existentes sin modificar directamente el código fuente de 
+esos tipos.
+
+En el contexto de las Web APIs en .NET Core, los métodos de extensión pueden ser utilizados 
+para agregar funcionalidades comunes a los controladores, servicios, middleware y otros 
+componentes de la aplicación. Esto ayuda a mantener un código limpio y modular, ya que permite 
+encapsular lógica adicional en métodos que pueden ser llamados como si fueran parte del propio 
+tipo al que se extiende.
