@@ -41,3 +41,25 @@ para agregar funcionalidades comunes a los controladores, servicios, middleware 
 componentes de la aplicación. Esto ayuda a mantener un código limpio y modular, ya que permite 
 encapsular lógica adicional en métodos que pueden ser llamados como si fueran parte del propio 
 tipo al que se extiende.
+
+
+# Onion(Cebolla) Arquitecture Implementation
+Es una forma de arquitectura en capas en forma de cascada
+
+Arquitectura en 4 capas:
+Capa de dominio
+Capa de servicio
+Capa de infraestructura
+Capa de presentación
+
+Presentacion y infraestructura estan en el mismo nivel
+
+Las capas interactura atraves de lo que la invercion de dependencia, dependiendo de abstraciones
+que seria nuestras interfaz y no la implementasion
+
+# Patrón Repositorio
+Creamos una capa de abstracción entre el acceso a datos y la capa de lógica empresarial de 
+una aplicación.
+
+# Capa Servicio
+Implementar la logica de negocio
