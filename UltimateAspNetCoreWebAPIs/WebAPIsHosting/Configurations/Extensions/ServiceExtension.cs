@@ -19,6 +19,10 @@ namespace WebAPIsHosting.Configurations {
             services.AddScoped<IRepositoryManager, RepositoryManager>();
         }
 
+        public static void ConfigureService(this IServiceCollection services) {
+            services.AddScoped<IServiceManager, ServiceManager>();
+        }
+
         // Configurar los cors: El intercambio de recursos de origen cruzado
         public static void ConfigureCors(this IServiceCollection services) {
             services.AddCors(opts => {

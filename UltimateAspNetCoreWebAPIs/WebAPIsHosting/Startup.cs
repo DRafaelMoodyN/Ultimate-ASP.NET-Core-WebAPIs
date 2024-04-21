@@ -13,6 +13,7 @@ public class Startup {
         services.ConfigureSql(Configuration);
         services.ConfigureCors();
         services.ConfigureRepository();
+        services.ConfigureService();
         services.AddControllers();
     }
 
