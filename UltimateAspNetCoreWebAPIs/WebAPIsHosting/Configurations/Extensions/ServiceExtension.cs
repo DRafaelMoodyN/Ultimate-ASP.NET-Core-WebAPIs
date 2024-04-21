@@ -1,7 +1,16 @@
-﻿namespace WebAPIsHosting.Configurations {
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace WebAPIsHosting.Configurations {
 
     // Todas las clas de Extension tiene que ser static
     public static class ServiceExtension {
+
+        // Configurar cadena de conexion
+        public static void ConfigureSqlConexio(this IServiceCollection services, IConfiguration config) {
+            services.AddDbContext<AppDbContext>(x => {
+                x.UseSqlServer(config.GetConnectionString("AppDbContext"));
+            });
+        }
 
         // Configurar los cors: El intercambio de recursos de origen cruzado
         public static void ConfigureCors(this IServiceCollection services) {
@@ -17,5 +26,7 @@
                 );
             });
         }
+
+
     }
 }
