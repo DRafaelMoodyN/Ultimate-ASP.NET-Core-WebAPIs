@@ -5,7 +5,7 @@ namespace WebAPIsHosting.Configurations {
     public static class ServiceExtension {
 
         // Configurar cadena de conexion
-        public static void ConfigureSqlConexio(this IServiceCollection services, IConfiguration config) {
+        public static void ConfigureSql(this IServiceCollection services, IConfiguration config) {
             services.AddDbContext<AppDbContext>(x => {
                 x.UseSqlServer(config.GetConnectionString("AppDbContext"));
             });
@@ -25,7 +25,5 @@ namespace WebAPIsHosting.Configurations {
                 );
             });
         }
-
-
     }
 }

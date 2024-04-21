@@ -10,6 +10,7 @@ public class Startup {
     // Servicios
     // Este metodo es llamado en tiempo de ejecucion, se utilisa para agregar servicios al contenedor
     public void ConfigureServices(IServiceCollection services) {
+        services.ConfigureSql(Configuration);
         services.ConfigureCors();
         services.AddControllers();
     }

@@ -6,11 +6,11 @@
 
         [Required(ErrorMessage = "El nombre es requerido")]
         [MaxLength(100, ErrorMessage = "Maximo de caracteres 100")]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "la dirrecion es requerdida")]
         [MaxLength(100, ErrorMessage = "Maximo de caracteres 100")]
-        public string Address { get; set; }
+        public string Address { get; set; } = string.Empty;
 
         // 
 
