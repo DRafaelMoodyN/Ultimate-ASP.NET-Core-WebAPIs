@@ -9,9 +9,8 @@
 
         // Configuracion de la cadena de conexion
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            optionsBuilder.UseSqlServer();
-        }
 
+        }
     }
 }
 
