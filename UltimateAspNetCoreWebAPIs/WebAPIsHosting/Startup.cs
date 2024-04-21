@@ -12,6 +12,7 @@ public class Startup {
     public void ConfigureServices(IServiceCollection services) {
         services.ConfigureSql(Configuration);
         services.ConfigureCors();
+        services.ConfigureRepository();
         services.AddControllers();
     }
 
